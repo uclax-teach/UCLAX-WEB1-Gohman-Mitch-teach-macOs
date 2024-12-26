@@ -1,0 +1,8 @@
+{
+    "React Styled Theme: Media Queries": {
+        "scope": "javascript,javascriptreact,css,styled-components",
+        "prefix": "retheme-media",
+        "body": ["@media ${({ theme }) => theme.cssMedia.isMediumAndUp} {}"],
+        "description": "React Styled Theme: Media Queries"
+    }
+}
