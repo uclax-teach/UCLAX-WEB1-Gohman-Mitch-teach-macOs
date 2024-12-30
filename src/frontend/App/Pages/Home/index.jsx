@@ -1,16 +1,29 @@
-// component
-import Meta from "@App/Core/components/Meta";
-import Inset from "@App/Layout/Inset";
+import styled from "styled-components";
 
-// component
+// components
+import Meta from "@Core/components/Meta";
+import Inset from "@Layout/Inset";
+import Tabbed from "./Tabbed";
+import Slideshow from "./Slideshow";
+
+const HomeStyled = styled.div`
+    h1 {
+        display: none;
+    }
+`;
+
 const Home = () => {
     return (
-        <main>
-            <Inset>
-                <Meta />
-                <h1>Home</h1>
-            </Inset>
-        </main>
+        <HomeStyled>
+            <Meta />
+            <h1>Home</h1>
+            <Slideshow />
+            <main>
+                <Inset>
+                    <Tabbed />
+                </Inset>
+            </main>
+        </HomeStyled>
     );
 };
 
