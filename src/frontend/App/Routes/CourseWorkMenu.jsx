@@ -9,9 +9,6 @@ const CourseWorkMenu = () => {
             </NavLink>
             <NavLink to="/course-work/sun-and-moon">Sun and Moon</NavLink>
             <NavLink to="/course-work/responsive">Responsive</NavLink>
-            <NavLink to="/course-work/form-input-state">
-                Form Input State
-            </NavLink>
         </nav>
     );
 };
