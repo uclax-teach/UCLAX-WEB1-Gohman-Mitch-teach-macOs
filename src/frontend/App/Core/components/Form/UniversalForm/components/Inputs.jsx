@@ -14,7 +14,6 @@ const Inputs = () => {
 
         const onChange = (e) => {
             const value = e.target.value;
-            console.log({ [formInput.id]: value });
             setFormInput({
                 ...formInput,
                 value: value,
