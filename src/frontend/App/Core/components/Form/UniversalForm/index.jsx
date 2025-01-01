@@ -14,8 +14,6 @@ const UniversalForm = ({ formInputs, apiEndpoint, trackingId }) => {
         formInputs,
         apiEndpoint,
         trackingId,
-        formStatus: "idle",
-        globalMessage: { type: "none", text: "" },
     };
 
     const [state, dispatch] = useReducer(reducer, stateProps);
