@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 // components
 import SharedPrimaryMenu from "@App/Routes/PrimaryMenu";
@@ -40,12 +41,21 @@ const PrimaryMenuStyled = styled.div`
 `;
 
 // component
-const PrimaryMenu = () => {
+const PrimaryMenu = ({ setShowMenu }) => {
+    const onClick = () => {
+        setShowMenu(false);
+    };
+
     return (
-        <PrimaryMenuStyled>
+        <PrimaryMenuStyled onClick={onClick}>
             <SharedPrimaryMenu />
         </PrimaryMenuStyled>
     );
 };
 
 export default PrimaryMenu;
+
+// prop-types
+PrimaryMenu.propTypes = {
+    setShowMenu: PropTypes.func.isRequired,
+};
