@@ -30,7 +30,7 @@ const Small = () => {
         <div>
             <Hamburger onClick={toggleMenu} />
             <Logo />
-            {showMenu && <PrimaryMenu />}
+            {showMenu && <PrimaryMenu setShowMenu={setShowMenu} />}
         </div>
     );
 };
